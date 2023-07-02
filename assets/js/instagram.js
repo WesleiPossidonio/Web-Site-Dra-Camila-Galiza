@@ -46,7 +46,7 @@
 // feed.run();
 
 $(function () {
-  const token = "IGQVJWUWhIeG1hTFY4N3daaXFqN3BFeGpZAN0ZAyRnJaZADUtOHdRWTE3U2d0VGpRZAUdHQzJoYjBDNW5CUDNKZAG5oQ3MzY01jUUZAvRkEyNGEweS1OV1RWTkh1bHNEX1dWdGh6aEMtdF9wLWNEQXhoYXdUcwZDZD";
+  const token = "IGQVJWcndWbHd6VE5YV1VYYXI0bnFwTkwwdktBazRudFB2V3lIUUptY2NGZAWRUNFFJV21CNjE1TUZA6enBIdkRkOTFRMjZA1ajlaUkhTNXBEbmdQUmo5eEpZANnJudHVOMllVTmtHVjVXdzhNWExXS2dmUwZDZD";
   const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=media_url,media_type,caption,permalink`;
 
   const imageLink = $('.instagram-image');
