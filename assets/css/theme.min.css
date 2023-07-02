@@ -1,0 +1,112 @@
+* {
+    font-family: 'Engrisch' !important;
+
+}
+
+html{
+    scroll-behavior: smooth;
+ }
+
+.nav-style:hover {
+    color: #6c786c !important;
+}
+
+.color-2 {
+    color: #6c786c !important;
+}
+
+.title-style {
+    font-weight: 400;
+    line-height: 34px;
+    color: #6c786c !important;
+}
+
+.title-style span,
+.subTitle,
+.spanStyle, .nav-style,
+.color-1 {
+    color: #d3b88d !important;
+}
+
+.title-section {
+    color: #6c786c !important;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.bg-one {
+    background: #6c786c !important;
+}
+
+.bg-two {
+    background: #d3b88d !important;
+}
+
+.bg-dot.primary {
+    background-image: radial-gradient(#d3b88d 2px, transparent 2.5px) !important;
+}
+
+
+.ImgLogo {
+    width: 15rem;
+}
+
+.img-services {
+    width: 10rem;
+}
+
+.img-logo-blog {
+    width: 5rem;
+}
+
+.img-logo-vantagens {
+    width: 5rem;
+    margin-top: -2.3rem;
+}
+
+.borderStyle {
+    border-bottom: 3px solid #6c786c;
+
+}
+
+
+.form-btn {
+    border-color: #fff;
+    color: #FFF;
+}
+
+.form-btn:hover {
+    background-color: #fff;
+    color: #6c786c;
+}
+
+.btn-laudo {
+    background-color: #fff;
+    color: #6c786c;
+}
+
+.social a:not([class*=link-]):not(.btn-circle) .uil[class*=whatsapp] {
+    color:#00a859
+}
+.social a.btn-circle[class*=whatsapp] {
+    color:#fff;
+    background-color:#00a859
+}
+
+.whatsapp {
+    position: fixed;
+    left: 1rem;
+    bottom: 1.5rem;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.whatsapp img {
+    width: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .title-section {
+        line-height: 36px;
+    }
+}
