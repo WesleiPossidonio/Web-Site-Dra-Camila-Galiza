@@ -45,9 +45,35 @@
 
 // feed.run();
 
+const apiUrl = 'http://localhost:4000/token';
+
+const tokenInsta = ''
+
+function fetchData() {
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Ocorreu um erro na requisição.');
+      }
+      return response.json();
+    })
+    .then(data => {
+    const {token} = data
+
+    tokenInsta = token
+      console.log(token);
+    })
+    .catch(error => {
+      console.error('Ocorreu um erro na requisição:', error.message);
+    });
+}
+
+
 $(function () {
-  const token = "IGQVJWcndWbHd6VE5YV1VYYXI0bnFwTkwwdktBazRudFB2V3lIUUptY2NGZAWRUNFFJV21CNjE1TUZA6enBIdkRkOTFRMjZA1ajlaUkhTNXBEbmdQUmo5eEpZANnJudHVOMllVTmtHVjVXdzhNWExXS2dmUwZDZD";
-  const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=media_url,media_type,caption,permalink`;
+  
+  fetchData();
+
+  const url = `https://graph.instagram.com/me/media?access_token=${tokenInsta}&fields=media_url,media_type,caption,permalink`;
 
   const imageLink = $('.instagram-image');
   const linkImageInsta = $('.instagram-link');
