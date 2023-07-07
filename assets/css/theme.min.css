@@ -105,6 +105,12 @@ html{
     width: 3rem;
 }
 
+@media only screen and (max-width: 780px) {
+    html {
+        font-size: 87.5% !important;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .title-section {
         line-height: 36px;
