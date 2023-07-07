@@ -82,7 +82,7 @@ $(function () {
       localStorage.setItem('instagramData', dataJsonString);
     }
 
-    dataJson.forEach((data, index) => {
+    storedDataJson.forEach((data, index) => {
       const imageUrl = data.media_url;
       const postLink = data.permalink;
   

@@ -3,9 +3,9 @@
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
- }
+}
 
 .nav-style:hover {
     color: #6c786c !important;
@@ -23,7 +23,8 @@ html{
 
 .title-style span,
 .subTitle,
-.spanStyle, .nav-style,
+.spanStyle,
+.nav-style,
 .color-1 {
     color: #d3b88d !important;
 }
@@ -34,12 +35,88 @@ html{
     line-height: 50px;
 }
 
+.span-blog {
+    margin-top: -14px;
+    margin-right: -15px;
+}
+
+.span-blog-2 {
+    margin-top: 5px;
+}
+
+.span-benefits {
+    margin-top: -0.5rem;
+}
+
+.span-benefits-2 {
+    top: 3.1rem;
+    left: -1.5rem;
+}
+
+.span-insta {
+    margin-top: -14px;
+}
+
+.span-insta-2 {
+    margin-top: -14px;
+    margin-right: -15px;
+}
+
+.span-insta-3 {
+    margin-top: 5px;
+}
+
+.span-faq {
+    margin-top: -14px;
+}
+
+.span-faq-2 {
+    margin-top: -14px;
+    margin-right: -15px;
+}
+
+.span-faq-3 {
+    margin-top: 5px;
+}
+
+
 .bg-one {
     background: #6c786c !important;
 }
 
 .bg-two {
     background: #d3b88d !important;
+}
+
+.btn-online {
+    background: #d3b88d !important;
+    border: 1px solid #d3b88d;
+
+    color: #FFF;
+}
+
+.btn-online:hover {
+    border: 1px solid #d3b88d;
+}
+
+
+.btn-online-2 {
+    background: transparent !important;
+    border: 1px solid #d3b88d;
+    color: #fff;
+}
+
+.image-laudo {
+    width: 25rem !important; 
+     max-width: 25rem !important;
+}
+
+
+.btn-online-2:hover {
+    background: #d3b88d !important;
+    border: 1px solid #d3b88d;
+
+    color: #fff;
 }
 
 .bg-dot.primary {
@@ -69,6 +146,17 @@ html{
 
 }
 
+.position-dra {
+    bottom:0; 
+    left:10%; 
+    width: 28%; 
+    z-index:2
+}
+
+.image-dra {
+    width: 22rem !important;
+    max-width: 22rem !important;
+}
 
 .form-btn {
     border-color: #fff;
@@ -86,11 +174,12 @@ html{
 }
 
 .social a:not([class*=link-]):not(.btn-circle) .uil[class*=whatsapp] {
-    color:#00a859
+    color: #00a859
 }
+
 .social a.btn-circle[class*=whatsapp] {
-    color:#fff;
-    background-color:#00a859
+    color: #fff;
+    background-color: #00a859
 }
 
 .whatsapp {
@@ -105,14 +194,84 @@ html{
     width: 3rem;
 }
 
+
+@media only screen and (max-width: 1025px) { 
+
+    .position-dra {
+        bottom:0; 
+        left:0%; 
+        width: 28%; 
+        z-index:2
+    }
+
+    .image-dra {
+        width: 20rem !important;
+        max-width: 20rem !important;
+    }
+}
+
 @media only screen and (max-width: 780px) {
     html {
         font-size: 87.5% !important;
     }
-}
 
-@media only screen and (max-width: 600px) {
     .title-section {
         line-height: 36px;
     }
+
+    .span-blog {
+        margin-top: -4px;
+        margin-right: -8px;
+    }
+
+    .span-blog-2 {
+        margin-top: 7px;
+    }
+
+    .span-benefits {
+        margin-top: -0.5rem;
+    }
+
+    .span-insta {
+        margin-top: -6px;
+    }
+
+    .span-insta-2 {
+        margin-top: -14px;
+        margin-right: -9px;
+    }
+
+    .span-insta-3 {
+        margin-top: 5px;
+    }
+
+.span-faq-2 {
+    margin-top: -1px;
+    margin-right: -9px;
+}
+
+.span-faq-3 {
+    margin-top: 8px;
+}
+
+
+.image-laudo {
+    width: 18rem !important; 
+    max-width: 18rem !important;
+}
+
+}
+
+@media only screen and (max-width: 560px) {
+   
+.position-dra {
+    bottom: 0; 
+    left:15%; 
+    width: 28%; 
+    z-index:2
+}
+
+.text-mobile {
+    margin-bottom: 29rem !important;
+}
 }
