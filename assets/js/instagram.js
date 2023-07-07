@@ -45,7 +45,10 @@
 
 // feed.run();
 
+const apiUrl = 'https://back-end-site-dra-camila.vercel.app/token';
+
 $(function () {
+  
   fetch(apiUrl)
   .then(response => {
     if (!response.ok) {
@@ -70,8 +73,10 @@ $(function () {
 
     const dataJson = response.data;
 
+    // Comparar os dados recebidos da API com os dados armazenados
     const isDataUpdated = JSON.stringify(dataJson) !== storedDataJsonString;
 
+    // Atualizar os dados armazenados se houver alterações
     if (isDataUpdated) {
       const dataJsonString = JSON.stringify(dataJson);
       localStorage.setItem('instagramData', dataJsonString);
