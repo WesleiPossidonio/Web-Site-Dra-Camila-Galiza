@@ -45,36 +45,19 @@
 
 // feed.run();
 
-const apiUrl = 'https://back-end-site-dra-camila.vercel.app/token';
-
-const tokenInsta = ''
-
-function fetchData() {
-  fetch(apiUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Ocorreu um erro na requisição.');
-      }
-      return response.json();
-    })
-    .then(data => {
-    const {token} = data
-
-    tokenInsta = token
-      console.log(token);
-    })
-    .catch(error => {
-      console.error('Ocorreu um erro na requisição:', error.message);
-    });
-}
-
-
 $(function () {
+  fetch(apiUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Ocorreu um erro na requisição.');
+    }
+    return response.json();
+  })
+  .then(data => {
+  const {token} = data
+
+  const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=media_url,media_type,caption,permalink`;
   
-  fetchData();
-
-  const url = `https://graph.instagram.com/me/media?access_token=${tokenInsta}&fields=media_url,media_type,caption,permalink`;
-
   const imageLink = $('.instagram-image');
   const linkImageInsta = $('.instagram-link');
 
@@ -87,10 +70,8 @@ $(function () {
 
     const dataJson = response.data;
 
-    // Comparar os dados recebidos da API com os dados armazenados
     const isDataUpdated = JSON.stringify(dataJson) !== storedDataJsonString;
 
-    // Atualizar os dados armazenados se houver alterações
     if (isDataUpdated) {
       const dataJsonString = JSON.stringify(dataJson);
       localStorage.setItem('instagramData', dataJsonString);
@@ -106,6 +87,11 @@ $(function () {
       imageTag.attr('src', imageUrl);
       linkTag.attr('href', postLink);
     });
+  });
+
+  })
+  .catch(error => {
+    console.error('Ocorreu um erro na requisição:', error.message);
   });
 });
 
