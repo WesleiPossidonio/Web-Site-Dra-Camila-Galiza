@@ -1,10 +1,31 @@
 * {
-    font-family: 'Engrisch' !important;
+    font-family: 'Montserrat', sans-serif !important;
+
 
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: #6c786b !important
+}
+
+
+
+.navbar-stick:not(.navbar-dark) {
+    background: #2c3532 !important;
+}
+
+.bg-page {
+    background-color: #2c3532;
+}
+
+.swiper-hero,
+.swiper-hero .swiper-slide {
+    height: 950px !important;
+    border-radius: 0 0 25% 25%;
 }
 
 .nav-style:hover {
@@ -107,8 +128,8 @@ html {
 }
 
 .image-laudo {
-    width: 25rem !important; 
-     max-width: 25rem !important;
+    width: 25rem !important;
+    max-width: 25rem !important;
 }
 
 
@@ -123,9 +144,24 @@ html {
     background-image: radial-gradient(#d3b88d 2px, transparent 2.5px) !important;
 }
 
+.test {
+    width: 50%;
+    height: 20rem;
+
+    top: 11.5rem;
+    left: -12%;
+    right: 0;
+
+
+    border-radius: 0 6px 6px 0;
+
+    background: #2c3532;
+}
+
 
 .ImgLogo {
-    width: 15rem;
+    width: 18rem;
+
 }
 
 .img-services {
@@ -141,16 +177,12 @@ html {
     margin-top: -2.3rem;
 }
 
-.borderStyle {
-    border-bottom: 3px solid #6c786c;
-
-}
 
 .position-dra {
-    bottom:0; 
-    left:10%; 
-    width: 28%; 
-    z-index:2
+    bottom: 0;
+    left: 10%;
+    width: 28%;
+    z-index: 2
 }
 
 .image-dra {
@@ -195,19 +227,42 @@ html {
 }
 
 
-@media only screen and (max-width: 1025px) { 
+@media only screen and (max-width: 1025px) {
+
+    
+.ImgLogo {
+    width: 12rem;
+
+}
 
     .position-dra {
-        bottom:0; 
-        left:0%; 
-        width: 28%; 
-        z-index:2
+        bottom: 0;
+        left: 0%;
+        width: 28%;
+        z-index: 2
     }
 
     .image-dra {
         width: 20rem !important;
         max-width: 20rem !important;
     }
+
+    .test {
+        width: 50%;
+        height: 20rem;
+    
+        top: 8rem;
+        left: -12%;
+        right: 0;
+    
+    
+        border-radius: 0 6px 6px 0;
+    
+        background: #2c3532;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 780px) {
@@ -245,33 +300,33 @@ html {
         margin-top: 5px;
     }
 
-.span-faq-2 {
-    margin-top: -1px;
-    margin-right: -9px;
-}
+    .span-faq-2 {
+        margin-top: -1px;
+        margin-right: -9px;
+    }
 
-.span-faq-3 {
-    margin-top: 8px;
-}
+    .span-faq-3 {
+        margin-top: 8px;
+    }
 
 
-.image-laudo {
-    width: 18rem !important; 
-    max-width: 18rem !important;
-}
+    .image-laudo {
+        width: 18rem !important;
+        max-width: 18rem !important;
+    }
 
 }
 
 @media only screen and (max-width: 560px) {
-   
-.position-dra {
-    bottom: 0; 
-    left:6%; 
-    width: 28%; 
-    z-index:2
-}
 
-.text-mobile {
-    margin-bottom: 29rem !important;
-}
+    .position-dra {
+        bottom: 0;
+        left: 6%;
+        width: 28%;
+        z-index: 2
+    }
+
+    .text-mobile {
+        margin-bottom: 29rem !important;
+    }
 }
