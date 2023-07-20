@@ -227,6 +227,8 @@ body {
 }
 
 
+
+
 @media only screen and (max-width: 1025px) {
 
     
@@ -248,17 +250,7 @@ body {
     }
 
     .test {
-        width: 50%;
-        height: 20rem;
-    
         top: 8rem;
-        left: -12%;
-        right: 0;
-    
-    
-        border-radius: 0 6px 6px 0;
-    
-        background: #2c3532;
     }
 
 
@@ -315,6 +307,22 @@ body {
         max-width: 18rem !important;
     }
 
+    .test {
+        width: 75%;
+        height: 17rem;
+    
+        top: 8rem;
+        left: -12%;
+    }
+
+
+    .swiper-hero,
+.swiper-hero .swiper-slide {
+    height: 550px !important;
+    border-radius: 0 0 7rem 7rem  !important;
+    
+}
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -328,5 +336,13 @@ body {
 
     .text-mobile {
         margin-bottom: 29rem !important;
+    }
+
+    .test {
+        width: 85%;
+        height: 17rem;
+    
+        top: 7.5rem;
+        left: -12%;
     }
 }
