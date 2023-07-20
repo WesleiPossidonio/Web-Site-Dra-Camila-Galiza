@@ -231,11 +231,10 @@ body {
 
 @media only screen and (max-width: 1025px) {
 
-    
-.ImgLogo {
-    width: 12rem;
 
-}
+    .ImgLogo {
+        width: 12rem;
+    }
 
     .position-dra {
         bottom: 0;
@@ -310,18 +309,18 @@ body {
     .test {
         width: 75%;
         height: 17rem;
-    
+
         top: 8rem;
         left: -12%;
     }
 
 
     .swiper-hero,
-.swiper-hero .swiper-slide {
-    height: 550px !important;
-    border-radius: 0 0 7rem 7rem  !important;
-    
-}
+    .swiper-hero .swiper-slide {
+        height: 550px !important;
+        border-radius: 0 0 7rem 7rem !important;
+
+    }
 
 }
 
@@ -341,8 +340,10 @@ body {
     .test {
         width: 85%;
         height: 17rem;
-    
+
         top: 7.5rem;
         left: -12%;
     }
+
+    
 }
