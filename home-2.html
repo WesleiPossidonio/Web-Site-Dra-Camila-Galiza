@@ -11,6 +11,8 @@
     <meta name="author" content="elemis">
     <title>Dra Camila Galiza</title>
 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <!-- < Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +27,10 @@
 </head>
 
 <body>
-    <div class="content-wrapper">
+    <div class="content-wrapper bg-home-2">
         <header class="wrapper">
             <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
-                <div class="container flex-lg-row flex-nowrap align-items-center">
+                <div class="container flex-lg-row flex-nowrap align-items-center ">
                     <div class="navbar-brand w-100">
                         <a href="./index.html">
                             <img class="logo-dark" src="./assets/img/ImgSite/Logo1.svg" style="width: 8rem;" alt="" />
@@ -44,36 +46,48 @@
                         <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link nav-style fs-18" href="./index.html">Home</a>
+                                    <a class="nav-link nav-style-2 fs-18" href="./index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-style fs-18" href="#about-me">Sobre Mim</a>
+                                    <a class="nav-link nav-style-2 fs-18" href="#about-me">Sobre Mim</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link nav-style fs-18" href="#services">Serviços</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                    <a class="nav-link nav-style-2 fs-18" href="#services">Serviços</a>
+                                    <ul class="dropdown-menu bg-home-2">
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
                                                 href="./servico1.html">Serviço 1</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
                                                 href="./servico2.html">Serviço 2</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
                                                 href="./servico3.html">Serviço 3</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
                                                 href="./servico4.html">Serviço 4</a></li>
-                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
                                                 href="./servico5.html">Serviço 5</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-style fs-18" href="#blog">Blog</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-style-2 fs-18" href="./blogs.html">Blog</a>
+                                    <ul class="dropdown-menu bg-home-2">
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
+                                                href="./servico1.html">Blog 1</a></li>
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
+                                                href="./servico2.html">Blog 2</a></li>
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
+                                                href="./servico3.html">Blog 3</a></li>
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
+                                                href="./servico4.html">Blog 4</a></li>
+                                        <li class="nav-item"><a class="dropdown-item nav-style-2 fs-18"
+                                                href="./servico5.html">Blog 5</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link nav-style fs-18" href="#">Contatos</a>
+                                    <a class="nav-link nav-style-2 fs-18" href="#">Contatos</a>
                                 </li>
                             </ul>
 
                             <div class="offcanvas-footer d-lg-none px-0">
-                                <div>
+                                <div class="contact-mobile">
                                     <a href="mailto:atendimento@camilagaliza.com"
                                         class="link-inverse">atendimento@camilagaliza.com</a>
                                     <br /> <a href="tel:+5522999300802">(22) 99930-0802</a> <br />
@@ -166,29 +180,12 @@
 
         </section>
 
-
-        <!-- <section class="section-frame br-fix overflow-hidden m-0 bg-page">
-            <div class="wrapper image-wrapper  bg-image bg-overlay bg-overlay-500 "
-                data-image-src="./assets/img/photos/bg26.jpg">
-                <div class="container pt-18 pt-lg-21 pb-17 pb-lg-19 text-center">
-                    <div class="row">
-                        <div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto" data-cues="zoomIn"
-                            data-group="page-title" data-interval="-200" data-delay="500">
-                            <h2 class="h6 text-uppercase ls-xl text-white mb-5">specialista em Ultrassonografia.</h2>
-                            <h3 class="display-1 fs-54 text-white mb-7">Revelando segredos internos do corpo.
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <section class="wrapper" id="about-me">
             <div class="container py-10 py-md-14">
                 <div class="row pb-6">
                     <div class="col-12 d-flex align-items-center justify-content-center flex-column">
-                        <img class="ImgLogo" src="./assets/img/ImgSite/camila-galiza-logo.svg" alt="">
-                        <h2 class="fs-33  text-center mt-5 text-white">
+                        <img class="ImgLogo" src="./assets/img/ImgSite/logo-home-2.svg" alt="">
+                        <h2 class="fs-33  text-center mt-5 color-2">
                             Especialista <br> Em Ultrassonografia.
                         </h2>
                     </div>
@@ -196,7 +193,7 @@
 
                 <div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 align-items-center position-relative">
 
-                    <div class="col-lg-6 position-relative mt-15 order-lg-2 order-1 order-md-2" data-cue="slideInRight"
+                    <div class="col-lg-6 position-relative mt-9 mt-md-15 order-lg-2 order-1 order-md-2 p-7" data-cue="slideInRight"
                         data-duration="1500">
                         <div class="shape bg-dot primary rellax w-16 h-20 mt-18" data-rellax-speed="1"
                             style="top: 3rem; left: 5.5rem"></div>
@@ -217,12 +214,12 @@
 
                     <div class="test position-absolute"></div>
 
-                    <div class="col-lg-6 mt-17" data-cue="slideInLeft" data-duration="1500">
+                    <div class="col-lg-6 mt-17 ps-5 ps-md-0" data-cue="slideInLeft" data-duration="1500">
                         <p class="mb-0 fs-15 text-white">Uma História Repleta de Inspiração e Dedicação.</p>
                         <h2 class="display-3 mb-3 text-white">
                             Apaixonada <br> Por sua Família <br> E pela Arte da <br> Ultrassonografia
                         </h2>
-                        <p class="mb-6 text-white">Sou uma Dra. de ultrassonografia dedicada, apaixonada por meu trabalho e pela
+                        <p class="mb-6 text-white text">Sou uma Dra. de ultrassonografia dedicada, apaixonada por meu trabalho e pela
                             possibilidade de explorar os mistérios internos do corpo humano. Tenho a alegria de ser mãe
                             de duas filhas lindas, que são meu maior orgulho. Minha família é meu porto seguro, meu
                             refúgio de amor e felicidade. Através da minha profissão.
@@ -266,17 +263,18 @@
                                                                 <h5 class="from-top mb-0">Read More</h5>
                                                             </figcaption>
                                                         </figure> -->
-                                                        <div class="card-body">
+                                                        
+                                                        <div class="card-body bg-home-2">                 
                                                             <div class="post-header">
                                                                 <h2 class="post-title h3 mt-1 mb-3">
-                                                                    <a class="link-dark" href="./servico1.html">
+                                                                    <a class="link-light" href="./servico1.html">
                                                                         Serviço 1
                                                                     </a>
                                                                 </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p>
+                                                                <p class="text-white">
                                                                    Os serviços de ultrassonografia oferecem uma abordagem segura, não invasiva e altamente precisa para auxiliar médicos no diagnóstico e monitoramento de condições médicas diversas
                                                                 </p>
 
@@ -299,17 +297,17 @@
                                                                 <h5 class="from-top mb-0">Read More</h5>
                                                             </figcaption>
                                                         </figure> -->
-                                                        <div class="card-body">
+                                                        <div class="card-body bg-home-2">
                                                             <div class="post-header">
                                                                 <h2 class="post-title h3 mt-1 mb-3">
-                                                                    <a class="link-dark" href="./servico2.html">
+                                                                    <a class="link-light" href="./servico2.html">
                                                                         Serviço 2
                                                                     </a>
                                                                 </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p>
+                                                                <p class="text-white">
                                                                    Os serviços de ultrassonografia oferecem uma abordagem segura, não invasiva e altamente precisa para auxiliar médicos no diagnóstico e monitoramento de condições médicas diversas
                                                                 </p>
 
@@ -332,17 +330,17 @@
                                                                 <h5 class="from-top mb-0">Read More</h5>
                                                             </figcaption>
                                                         </figure> -->
-                                                        <div class="card-body">
+                                                        <div class="card-body bg-home-2">
                                                             <div class="post-header">
                                                                 <h2 class="post-title h3 mt-1 mb-3">
-                                                                    <a class="link-dark" href="./servico3.html">
+                                                                    <a class="link-light" href="./servico3.html">
                                                                         Serviço 3
                                                                     </a>
                                                                 </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p>
+                                                                <p class="text-white">
                                                                    Os serviços de ultrassonografia oferecem uma abordagem segura, não invasiva e altamente precisa para auxiliar médicos no diagnóstico e monitoramento de condições médicas diversas
                                                                 </p>
 
@@ -365,17 +363,17 @@
                                                                 <h5 class="from-top mb-0">Read More</h5>
                                                             </figcaption>
                                                         </figure> -->
-                                                        <div class="card-body">
+                                                        <div class="card-body bg-home-2">
                                                             <div class="post-header">
                                                                 <h2 class="post-title h3 mt-1 mb-3">
-                                                                    <a class="link-dark" href="./blog-post.html">
+                                                                    <a class="link-light" href="./blog-post.html">
                                                                         Serviço 4
                                                                     </a>
                                                                 </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p>
+                                                                <p class="text-white">
                                                                    Os serviços de ultrassonografia oferecem uma abordagem segura, não invasiva e altamente precisa para auxiliar médicos no diagnóstico e monitoramento de condições médicas diversas
                                                                 </p>
 
@@ -398,17 +396,17 @@
                                                                 <h5 class="from-top mb-0">Read More</h5>
                                                             </figcaption>
                                                         </figure> -->
-                                                        <div class="card-body">
+                                                        <div class="card-body bg-home-2">
                                                             <div class="post-header">
                                                                 <h2 class="post-title h3 mt-1 mb-3">
-                                                                    <a class="link-dark" href="./servico5.html">
+                                                                    <a class="link-light" href="./servico5.html">
                                                                         Serviço 5
                                                                     </a>
                                                                 </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p>
+                                                                <p class="text-white">
                                                                    Os serviços de ultrassonografia oferecem uma abordagem segura, não invasiva e altamente precisa para auxiliar médicos no diagnóstico e monitoramento de condições médicas diversas
                                                                 </p>
 
@@ -437,16 +435,14 @@
 
                 <div class="row text-center py-15">
                     <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto d-flex align-items-center justify-content-center">
-                        <img class="img-logo-blog" src="./assets/img/ImgSite/Logo-vantagens.svg" style="margin-top: -2.5rem;"
+                        <img class="img-logo-blog" src="./assets/img/ImgSite/logo-section-2.svg" style="margin-top: -2.5rem;"
                             alt="">
-                        <div class="d-flex flex-column align-items-start borderStyle">
-                            <span class="display-2 mb-0 text-white">Blog </span>
-                            <div class="d-flex align-items-center" style="margin-top: -14px;">
-                                <span class="display-2 fs-28 text-white span-blog">DA
-                                </span>
-                                <span class="display-2 ms-3 spanStyle span-blog-2">Camila </span>
+                            <div class="d-flex flex-column align-items-start">
+                                <span class="display-2 mb-0 blog-title text-white">Nossos</span>
+                                <div class="d-flex align-items-end span-insta ms-8">
+                                    <span class="display-2 ms-3 color-2 ">Blogs </span>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 
@@ -461,7 +457,7 @@
                                 <div class="swiper-slide">
                                     <div class="item-inner">
                                         <article>
-                                            <div class="card">
+                                            <div class="card bg-page">
                                                 <figure class="card-img-top overlay overlay-1 hover-scale">
                                                     <a href="#">
                                                         <img src="./assets/img/photos/b4.jpg" alt="" />
@@ -473,14 +469,14 @@
                                                 <div class="card-body">
                                                     <div class="post-header">
                                                         <h2 class="post-title h3 mt-1 mb-3">
-                                                            <a class="link-dark" href="./blog-post.html">
+                                                            <a class="link-light" href="./blog-post.html">
                                                                 Blog 1
                                                             </a>
                                                         </h2>
                                                     </div>
 
                                                     <div class="post-content">
-                                                        <p>
+                                                        <p class="text-white">
                                                             "Explorando as profundezas invisíveis do corpo, o blog de
                                                             ultrassonografia desvenda um mundo fascinante de imagens que
                                                             revelam segredos ocultos sob a pele
@@ -490,7 +486,7 @@
 
                                                 <div class="card-footer">
                                                     <ul class="post-meta d-flex mb-0">
-                                                        <li class="post-date">
+                                                        <li class="post-date text-white">
                                                             <i class="uil uil-calendar-alt"></i>
                                                             <span>14 Abril 2023</span>
                                                         </li>
@@ -504,7 +500,7 @@
                                 <div class="swiper-slide">
                                     <div class="item-inner">
                                         <article>
-                                            <div class="card">
+                                            <div class="card bg-page">
                                                 <figure class="card-img-top overlay overlay-1 hover-scale">
                                                     <a href="#">
                                                         <img src="./assets/img/photos/b5.jpg" alt="" />
@@ -516,14 +512,14 @@
                                                 <div class="card-body">
                                                     <div class="post-header">
                                                         <h2 class="post-title h3 mt-1 mb-3">
-                                                            <a class="link-dark" href="./blog-post.html">
+                                                            <a class="link-light" href="./blog-post.html">
                                                                 Blog 2
                                                             </a>
                                                         </h2>
                                                     </div>
 
                                                     <div class="post-content">
-                                                        <p>
+                                                        <p class="text-white">
                                                             Explorando as profundezas invisíveis do corpo, o blog de
                                                             ultrassonografia desvenda um mundo fascinante de imagens que
                                                             revelam segredos ocultos sob a pele
@@ -534,7 +530,7 @@
 
                                                 <div class="card-footer">
                                                     <ul class="post-meta d-flex mb-0">
-                                                        <li class="post-date">
+                                                        <li class="post-date text-white">
                                                             <i class="uil uil-calendar-alt"></i>
                                                             <span>5 Abril 2023</span>
                                                         </li>
@@ -548,7 +544,7 @@
                                 <div class="swiper-slide">
                                     <div class="item-inner">
                                         <article>
-                                            <div class="card">
+                                            <div class="card bg-page">
                                                 <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#">
                                                         <img src="./assets/img/photos/b6.jpg" alt="" /></a>
                                                     <figcaption>
@@ -558,14 +554,14 @@
                                                 <div class="card-body">
                                                     <div class="post-header">
                                                         <h2 class="post-title h3 mt-1 mb-3">
-                                                            <a class="link-dark" href="./blog-post.html">
+                                                            <a class="link-light" href="./blog-post.html">
                                                                 Blog 3
                                                             </a>
                                                         </h2>
                                                     </div>
 
                                                     <div class="post-content">
-                                                        <p>
+                                                        <p class="text-white">
                                                             Explorando as profundezas invisíveis do corpo, o blog de
                                                             ultrassonografia desvenda um mundo fascinante de imagens que
                                                             revelam segredos ocultos sob a pele
@@ -576,7 +572,7 @@
 
                                                 <div class="card-footer">
                                                     <ul class="post-meta d-flex mb-0">
-                                                        <li class="post-date">
+                                                        <li class="post-date text-white">
                                                             <i class="uil uil-calendar-alt"></i>
                                                             <span>1 Abril 2023</span>
                                                         </li>
@@ -591,7 +587,7 @@
                                 <div class="swiper-slide">
                                     <div class="item-inner">
                                         <article>
-                                            <div class="card">
+                                            <div class="card bg-page">
                                                 <figure class="card-img-top overlay overlay-1 hover-scale">
                                                     <a href="#">
                                                         <img src="./assets/img/photos/b7.jpg" alt="" />
@@ -604,14 +600,14 @@
                                                 <div class="card-body">
                                                     <div class="post-header">
                                                         <h2 class="post-title h3 mt-1 mb-3">
-                                                            <a class="link-dark" href="./blog-post.html">
+                                                            <a class="link-light" href="./blog-post.html">
                                                                 Blog 4
                                                             </a>
                                                         </h2>
                                                     </div>
 
                                                     <div class="post-content">
-                                                        <p>
+                                                        <p class="text-white">
                                                             Explorando as profundezas invisíveis do corpo, o blog de
                                                             ultrassonografia desvenda um mundo fascinante de imagens que
                                                             revelam segredos ocultos sob a pele
@@ -621,7 +617,7 @@
 
                                                 <div class="card-footer">
                                                     <ul class="post-meta d-flex mb-0">
-                                                        <li class="post-date">
+                                                        <li class="post-date text-white">
                                                             <i class="uil uil-calendar-alt"></i>
                                                             <span>20 Fevereiro 2023 </span>
                                                         </li>
@@ -670,50 +666,50 @@
 
                 <div class="row gx-md-8 gx-xl-12 gy-10 mb-14 mb-md-18 align-items-center">
                     <div class="col-lg-6 order-2" data-cues="slideInDown" data-group="page-title" data-delay="2500">
-                        <div class="card shadow-lg me-lg-6">
+                        <div class="card shadow-lg me-lg-6 bg-home-2">
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row">
                                     <div>
-                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4">
+                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4" style="width: 3rem !important;">
                                             <span class="number text-white">01</span>
                                         </span>
                                     </div>
                                     <div>
                                         <h4 class="mb-1 color-2">Atendimento Personalizado e Humanizado</h4>
-                                        <p class="mb-0 color-1">Onde você será ouvido e terá suas dúvidas esclarecidas.
+                                        <p class="mb-0 text-white">Onde você será ouvido e terá suas dúvidas esclarecidas.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card shadow-lg ms-lg-13 mt-6">
+                        <div class="card shadow-lg ms-lg-13 mt-6 bg-home-2">
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row">
                                     <div>
-                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4">
+                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4" style="width: 3rem !important;">
                                             <span class="number text-white">02</span>
                                         </span>
                                     </div>
                                     <div>
                                         <h4 class="mb-1 color-2">Equipamentos de Última Geração</h4>
-                                        <p class="mb-0 color-1">Garantimos os melhores resultados.</p>
+                                        <p class="mb-0 text-white">Garantimos os melhores resultados.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card shadow-lg mx-lg-6 mt-6">
+                        <div class="card shadow-lg mx-lg-6 mt-6 bg-home-2">
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row">
                                     <div>
-                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4">
+                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4" style="width: 3rem !important;">
                                             <span class="number text-white">03</span>
                                         </span>
                                     </div>
                                     <div>
                                         <h4 class="mb-1 color-2">Finalize Product</h4>
-                                        <p class="mb-0 color-1">Cras mattis consectetur purus sit amet.</p>
+                                        <p class="mb-0 text-white">Cras mattis consectetur purus sit amet.</p>
                                     </div>
                                 </div>
                             </div>
@@ -743,12 +739,12 @@
 
                 <div class="row text-center py-15">
                     <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto d-flex align-items-center justify-content-center">
-                        <img class="img-logo-blog" src="./assets/img/ImgSite/Logo-vantagens.svg" style="margin-top: -2.5rem;"
+                        <img class="img-logo-blog" src="./assets/img/ImgSite/logo-section-2.svg" style="margin-top: -2.5rem;"
                             alt="">
                         <div class="d-flex flex-column align-items-start">
                             <span class="display-2 mb-0 text-white">Nosso</span>
                             <div class="d-flex align-items-center span-insta">
-                                <span class="display-2 ms-3 spanStyle span-insta-3">Instagram </span>
+                                <span class="display-2 ms-3 color-2">Instagram </span>
                             </div>
                         </div>
                     </div>
@@ -860,9 +856,9 @@
                     <div class="col-lg-6">
                         <div id="accordion-3" class="accordion-wrapper" data-cues="slideInDown" data-group="page-title" data-delay="1000">
 
-                            <div class="card accordion-item shadow-lg">
+                            <div class="card accordion-item shadow-lg bg-home-2">
                                 <div class="card-header" id="accordion-heading-3-1">
-                                    <button class="collapsed" data-bs-toggle="collapse"
+                                    <button class="collapsed text-acordion-2" data-bs-toggle="collapse"
                                         data-bs-target="#accordion-collapse-3-1" aria-expanded="false"
                                         aria-controls="accordion-collapse-3-1">
                                         Qual a preparação necessária para um exame de ultrassonografia?
@@ -872,7 +868,7 @@
                                 <div id="accordion-collapse-3-1" class="collapse"
                                     aria-labelledby="accordion-heading-3-1" data-bs-target="#accordion-3">
                                     <div class="card-body">
-                                        <p>
+                                        <p class="text-acordion-2">
                                             Geralmente, é recomendado estar em jejum de 6 a 8 horas para exames
                                             abdominais,
                                             enquanto para exames
@@ -884,9 +880,9 @@
                                 </div>
                             </div>
 
-                            <div class="card accordion-item shadow-lg">
+                            <div class="card accordion-item shadow-lg bg-home-2">
                                 <div class="card-header" id="accordion-heading-3-2">
-                                    <button class="collapsed" data-bs-toggle="collapse"
+                                    <button class="collapsed text-acordion-2" data-bs-toggle="collapse"
                                         data-bs-target="#accordion-collapse-3-2" aria-expanded="false"
                                         aria-controls="accordion-collapse-3-2">
                                         É seguro fazer ultrassonografia durante a
@@ -897,7 +893,7 @@
                                 <div id="accordion-collapse-3-2" class="collapse"
                                     aria-labelledby="accordion-heading-3-2" data-bs-target="#accordion-3">
                                     <div class="card-body">
-                                        <p>
+                                        <p class="text-acordion-2">
                                             Sim, a ultrassonografia é considerada segura durante a gestação.
                                             Utilizamos equipamentos de alta qualidade e realizamos o procedimento de
                                             forma cuidadosa, minimizando qualquer risco para a mãe e o bebê.
@@ -906,9 +902,9 @@
                                 </div>
                             </div>
 
-                            <div class="card accordion-item shadow-lg">
+                            <div class="card accordion-item shadow-lg bg-home-2">
                                 <div class="card-header" id="accordion-heading-3-3">
-                                    <button class="collapsed" data-bs-toggle="collapse"
+                                    <button class="collapsed text-acordion-2" data-bs-toggle="collapse"
                                         data-bs-target="#accordion-collapse-3-3" aria-expanded="false"
                                         aria-controls="accordion-collapse-3-3">
                                         É necessário ter um pedido médico para realizar uma ultrassonografia?
@@ -918,7 +914,7 @@
                                 <div id="accordion-collapse-3-3" class="collapse"
                                     aria-labelledby="accordion-heading-3-3" data-bs-target="#accordion-3">
                                     <div class="card-body">
-                                        <p>
+                                        <p class="text-acordion-2">
                                             Na maioria dos casos, é necessário ter um pedido médico para realizar exames
                                             de
                                             ultrassonografia.
@@ -933,9 +929,9 @@
                                 </div>
                             </div>
 
-                            <div class="card accordion-item shadow-lg">
+                            <div class="card accordion-item shadow-lg bg-home-2">
                                 <div class="card-header" id="accordion-heading-3-4">
-                                    <button class="collapsed" data-bs-toggle="collapse"
+                                    <button class="collapsed text-acordion-2" data-bs-toggle="collapse"
                                         data-bs-target="#accordion-collapse-3-4" aria-expanded="false"
                                         aria-controls="accordion-collapse-3-3">
                                         Quanto tempo dura um exame de ultrassonografia?
@@ -945,7 +941,7 @@
                                 <div id="accordion-collapse-3-4" class="collapse"
                                     aria-labelledby="accordion-heading-3-4" data-bs-target="#accordion-3">
                                     <div class="card-body">
-                                        <p>
+                                        <p class="text-acordion-2">
                                             A duração de um exame de ultrassonografia pode variar dependendo do tipo de
                                             exame e da
                                             região do corpo a ser avaliada. Em média, o procedimento dura de 15 a 30
@@ -956,9 +952,9 @@
                             </div>
 
 
-                            <div class="card accordion-item shadow-lg">
+                            <div class="card accordion-item shadow-lg bg-home-2">
                                 <div class="card-header" id="accordion-heading-3-5">
-                                    <button class="collapsed" data-bs-toggle="collapse"
+                                    <button class="collapsed text-acordion-2" data-bs-toggle="collapse"
                                         data-bs-target="#accordion-collapse-3-5" aria-expanded="false"
                                         aria-controls="accordion-collapse-3-4">
                                         É possível identificar o sexo do bebê por meio da ultrassonografia?
@@ -993,7 +989,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center mb-15 mb-md-22 ">
-                        <img class="ImgLogo" src="./assets/img/ImgSite/camila-galiza-logo.svg" alt="">
+                        <img class="ImgLogo" src="./assets/img/ImgSite/logo-home-2.svg" alt="">
                     </div>
                 </div>
                 <div class="card bg-page card-mobile" data-cue="fadeIn" data-duration="1000">
@@ -1034,7 +1030,9 @@
                     <div class="widget">
                         <img class="mb-4" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x"
                             alt="" />
-                        <p class="mb-4 spanStyle">© 2023. Todos os Direitos Reservados.</p>
+                        <p class="mb-4 spanStyle">© 2023. Todos os Direitos Reservados. <br> Desenvolvido por <a href="http://" target="_blank" class="developed-link">Weslei França</a>
+
+                        </p>
                     </div>
                 </div>
 
@@ -1042,11 +1040,11 @@
                     <div class="widget">
                         <h4 class="widget-title mb-3 text-white">Mapa do Site</h4>
                         <ul class="list-unstyled mb-0">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Sobre Mim</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contatos</a></li>
+                            <li><a href="#" class="footer-text-style">Home</a></li>
+                            <li><a href="#" class="footer-text-style">Sobre Mim</a></li>
+                            <li><a href="#" class="footer-text-style">Serviços</a></li>
+                            <li><a href="#" class="footer-text-style">Blog</a></li>
+                            <li><a href="#" class="footer-text-style">Contatos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1054,8 +1052,8 @@
                 <div class="col-md-4 col-lg-3 order-3 order-lg-4">
                     <div class="widget">
                         <h4 class="widget-title mb-3 text-white">Contatos</h4>
-                        <address>Macaé-RJ</address>
-                        <a href="mailto:atendimento@camilagaliza.com">atendimento@camilagaliza.com</a><br /> <a href="tel:+5522999300802">(22)
+                        <address class="footer-text-style">Macaé-RJ</address>
+                        <a href="mailto:atendimento@camilagaliza.com" class="footer-text-style">atendimento@camilagaliza.com</a><br /> <a href="tel:+5522999300802" class="footer-text-style">(22)
                             99930-0802</a> 
                     </div>
                 </div>

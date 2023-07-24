@@ -12,10 +12,21 @@ body {
     background-color: #6c786b !important
 }
 
+.bg-home-2 {
+    background-color: #000 !important;
+}
 
+.text {
+    text-align: justify;
+    padding: 0 1.2rem 0 0;
+}
 
 .navbar-stick:not(.navbar-dark) {
     background: #2c3532 !important;
+}
+
+.navbar-stick:not(.navbar-home-1) {
+    background: #000 !important;
 }
 
 .bg-page {
@@ -26,6 +37,10 @@ body {
 .swiper-hero .swiper-slide {
     height: 950px !important;
     border-radius: 0 0 25% 25%;
+}
+
+.bg-image {
+    filter: brightness(100%) !important;
 }
 
 .nav-style:hover {
@@ -45,9 +60,22 @@ body {
 .title-style span,
 .subTitle,
 .spanStyle,
+.developed-link,
 .nav-style,
 .color-1 {
     color: #d3b88d !important;
+}
+
+.nav-style-2, .text-acordion-2 {
+    color: #fff !important;
+}
+
+.nav-style-2:hover, .text-acordion-2:hover {
+    color: #6c786c !important;
+}
+
+.developed-link:hover {
+  color: #fff !important;
 }
 
 .title-section {
@@ -158,6 +186,9 @@ body {
     background: #2c3532;
 }
 
+.blog-title {
+    margin-top: 1.5rem;
+}
 
 .ImgLogo {
     width: 18rem;
@@ -169,14 +200,17 @@ body {
 }
 
 .img-logo-blog {
-    width: 5rem;
+    width: 4rem;
 }
 
 .img-logo-vantagens {
-    width: 5rem;
+    width: 4rem;
     margin-top: -2.3rem;
 }
 
+.post-header img {
+width: 6.5rem;
+}
 
 .position-dra {
     bottom: 0;
@@ -226,7 +260,18 @@ body {
     width: 3rem;
 }
 
+.footer-text-style {
+    color: #fff;
+    cursor: pointer;
+}
 
+.footer-text-style:hover {
+   color: #6c786b !important;
+}
+
+.blog-home {
+    border-radius: 2rem !important;
+}
 
 
 @media only screen and (max-width: 1025px) {
@@ -345,5 +390,38 @@ body {
         left: -12%;
     }
 
-    
+    .icon {
+        width: 2rem !important;
+    }
+
+
+    .whatsapp {
+        position: fixed;
+        left: 22rem;
+        bottom: 1.5rem;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    .contact-mobile {
+        margin-left: -1rem !important;
+    }
+
+    .header-blog {
+        padding: 2rem;
+    }
+
+    .blog-home {
+        border-radius: 1rem !important;
+        padding: 0 1rem;
+        margin-top: 1rem;
+        filter: brightness(100%)
+    }
+
+    .text-contact-services {
+        margin-top: 5px !important; 
+        margin-right: -8px !important;
+    }
+
+   
 }

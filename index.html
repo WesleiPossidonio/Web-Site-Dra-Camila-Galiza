@@ -11,6 +11,8 @@
     <meta name="author" content="elemis">
     <title>Dra Camila Galiza</title>
 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <!-- < Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,7 @@
 <body>
     <div class="content-wrapper">
         <header class="wrapper">
-            <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
+            <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-home-1 px-md-10 px-xxl-0">
                 <div class="container flex-lg-row flex-nowrap align-items-center">
                     <div class="navbar-brand w-100">
                         <a href="./index.html">
@@ -51,7 +53,7 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link nav-style fs-18" href="#services">Serviços</a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu bg-page">
                                         <li class="nav-item"><a class="dropdown-item nav-style fs-18"
                                                 href="./servico1.html">Serviço 1</a></li>
                                         <li class="nav-item"><a class="dropdown-item nav-style fs-18"
@@ -64,8 +66,20 @@
                                                 href="./servico5.html">Serviço 5</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-style fs-18" href="#blog">Blog</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-style fs-18" href="./blogs.html">Blog</a>
+                                    <ul class="dropdown-menu bg-page">
+                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                                href="./servico1.html">Blog 1</a></li>
+                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                                href="./servico2.html">Blog 2</a></li>
+                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                                href="./servico3.html">Blog 3</a></li>
+                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                                href="./servico4.html">Blog 4</a></li>
+                                        <li class="nav-item"><a class="dropdown-item nav-style fs-18"
+                                                href="./servico5.html">Blog 5</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item ">
                                     <a class="nav-link nav-style fs-18" href="#">Contatos</a>
@@ -73,7 +87,7 @@
                             </ul>
 
                             <div class="offcanvas-footer d-lg-none px-0">
-                                <div>
+                                <div class="contact-mobile">
                                     <a href="mailto:atendimento@camilagaliza.com"
                                         class="link-inverse">atendimento@camilagaliza.com</a>
                                     <br /> <a href="tel:+5522999300802">(22) 99930-0802</a> <br />
@@ -166,23 +180,6 @@
 
         </section>
 
-
-        <!-- <section class="section-frame br-fix overflow-hidden m-0 bg-page">
-            <div class="wrapper image-wrapper  bg-image bg-overlay bg-overlay-500 "
-                data-image-src="./assets/img/photos/bg26.jpg">
-                <div class="container pt-18 pt-lg-21 pb-17 pb-lg-19 text-center">
-                    <div class="row">
-                        <div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto" data-cues="zoomIn"
-                            data-group="page-title" data-interval="-200" data-delay="500">
-                            <h2 class="h6 text-uppercase ls-xl text-white mb-5">specialista em Ultrassonografia.</h2>
-                            <h3 class="display-1 fs-54 text-white mb-7">Revelando segredos internos do corpo.
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <section class="wrapper" id="about-me">
             <div class="container py-10 py-md-14">
                 <div class="row pb-6">
@@ -196,7 +193,7 @@
 
                 <div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 align-items-center position-relative">
 
-                    <div class="col-lg-6 position-relative mt-15 order-lg-2 order-1 order-md-2" data-cue="slideInRight"
+                    <div class="col-lg-6 position-relative mt-9 mt-md-15 order-lg-2 order-1 order-md-2 p-7" data-cue="slideInRight"
                         data-duration="1500">
                         <div class="shape bg-dot primary rellax w-16 h-20 mt-18" data-rellax-speed="1"
                             style="top: 3rem; left: 5.5rem"></div>
@@ -217,12 +214,12 @@
 
                     <div class="test position-absolute"></div>
 
-                    <div class="col-lg-6 mt-17" data-cue="slideInLeft" data-duration="1500">
+                    <div class="col-lg-6 mt-17 ps-5 ps-md-0" data-cue="slideInLeft" data-duration="1500">
                         <p class="mb-0 fs-15 text-white">Uma História Repleta de Inspiração e Dedicação.</p>
                         <h2 class="display-3 mb-3 text-white">
                             Apaixonada <br> Por sua Família <br> E pela Arte da <br> Ultrassonografia
                         </h2>
-                        <p class="mb-6 text-white">Sou uma Dra. de ultrassonografia dedicada, apaixonada por meu trabalho e pela
+                        <p class="mb-6 text-white text">Sou uma Dra. de ultrassonografia dedicada, apaixonada por meu trabalho e pela
                             possibilidade de explorar os mistérios internos do corpo humano. Tenho a alegria de ser mãe
                             de duas filhas lindas, que são meu maior orgulho. Minha família é meu porto seguro, meu
                             refúgio de amor e felicidade. Através da minha profissão.
@@ -266,7 +263,8 @@
                                                                 <h5 class="from-top mb-0">Read More</h5>
                                                             </figcaption>
                                                         </figure> -->
-                                                        <div class="card-body">
+                                                        
+                                                        <div class="card-body">                 
                                                             <div class="post-header">
                                                                 <h2 class="post-title h3 mt-1 mb-3">
                                                                     <a class="link-dark" href="./servico1.html">
@@ -439,14 +437,12 @@
                     <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto d-flex align-items-center justify-content-center">
                         <img class="img-logo-blog" src="./assets/img/ImgSite/Logo-vantagens.svg" style="margin-top: -2.5rem;"
                             alt="">
-                        <div class="d-flex flex-column align-items-start borderStyle">
-                            <span class="display-2 mb-0 text-white">Blog </span>
-                            <div class="d-flex align-items-center" style="margin-top: -14px;">
-                                <span class="display-2 fs-28 text-white span-blog">DA
-                                </span>
-                                <span class="display-2 ms-3 spanStyle span-blog-2">Camila </span>
+                            <div class="d-flex flex-column align-items-start">
+                                <span class="display-2 mb-0 blog-title text-white">Nossos</span>
+                                <div class="d-flex align-items-end span-insta ms-8">
+                                    <span class="display-2 ms-3 spanStyle span-insta-3">Blogs </span>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 
@@ -657,9 +653,7 @@
 
                         <div class="d-flex flex-column align-items-center borderStyle position-relative">
                             <div class="d-flex align-itens-center">
-                     
-                                    <img class="ImgLogo" src="./assets/img/ImgSite/camila-galiza-logo.svg" alt="">
-                                
+                                <img class="ImgLogo" src="./assets/img/ImgSite/camila-galiza-logo.svg" alt="">
                             </div>
                             <span class="display-2 text-center mt-3 rotator-fade text-white fs-32">
                                 Carinho, Cuidado, Dedicação, Especialidade!
@@ -674,7 +668,7 @@
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row">
                                     <div>
-                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4">
+                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4" style="width: 3rem !important;">
                                             <span class="number text-white">01</span>
                                         </span>
                                     </div>
@@ -691,7 +685,7 @@
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row">
                                     <div>
-                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4">
+                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4" style="width: 3rem !important;">
                                             <span class="number text-white">02</span>
                                         </span>
                                     </div>
@@ -707,7 +701,7 @@
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row">
                                     <div>
-                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4">
+                                        <span class="icon btn btn-circle btn-lg btn-soft-primary bg-two pe-none me-4" style="width: 3rem !important;">
                                             <span class="number text-white">03</span>
                                         </span>
                                     </div>
@@ -1034,7 +1028,9 @@
                     <div class="widget">
                         <img class="mb-4" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x"
                             alt="" />
-                        <p class="mb-4 spanStyle">© 2023. Todos os Direitos Reservados.</p>
+                        <p class="mb-4 spanStyle">© 2023. Todos os Direitos Reservados. <br> Desenvolvido por <a href="http://" target="_blank" class="developed-link">Weslei França</a>
+
+                        </p>
                     </div>
                 </div>
 
@@ -1042,11 +1038,11 @@
                     <div class="widget">
                         <h4 class="widget-title mb-3 text-white">Mapa do Site</h4>
                         <ul class="list-unstyled mb-0">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Sobre Mim</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contatos</a></li>
+                            <li><a href="#" class="footer-text-style">Home</a></li>
+                            <li><a href="#" class="footer-text-style">Sobre Mim</a></li>
+                            <li><a href="#" class="footer-text-style">Serviços</a></li>
+                            <li><a href="#" class="footer-text-style">Blog</a></li>
+                            <li><a href="#" class="footer-text-style">Contatos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1054,8 +1050,8 @@
                 <div class="col-md-4 col-lg-3 order-3 order-lg-4">
                     <div class="widget">
                         <h4 class="widget-title mb-3 text-white">Contatos</h4>
-                        <address>Macaé-RJ</address>
-                        <a href="mailto:atendimento@camilagaliza.com">atendimento@camilagaliza.com</a><br /> <a href="tel:+5522999300802">(22)
+                        <address class="footer-text-style">Macaé-RJ</address>
+                        <a href="mailto:atendimento@camilagaliza.com" class="footer-text-style">atendimento@camilagaliza.com</a><br /> <a href="tel:+5522999300802" class="footer-text-style">(22)
                             99930-0802</a> 
                     </div>
                 </div>
