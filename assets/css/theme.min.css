@@ -275,8 +275,6 @@ width: 6.5rem;
 
 
 @media only screen and (max-width: 1025px) {
-
-
     .ImgLogo {
         width: 12rem;
     }
@@ -296,8 +294,6 @@ width: 6.5rem;
     .test {
         top: 8rem;
     }
-
-
 
 }
 
@@ -359,7 +355,6 @@ width: 6.5rem;
         left: -12%;
     }
 
-
     .swiper-hero,
     .swiper-hero .swiper-slide {
         height: 550px !important;
@@ -370,6 +365,14 @@ width: 6.5rem;
 }
 
 @media only screen and (max-width: 560px) {
+
+    .swiper-hero,
+    .swiper-hero .swiper-slide {
+        height: 480px !important;
+        border-radius: 0 0 7rem 7rem !important;
+
+    }
+
 
     .position-dra {
         bottom: 0;
