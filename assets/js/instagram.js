@@ -69,8 +69,6 @@ $(function () {
   const storedDataJson = JSON.parse(storedDataJsonArrayString);
 
   $.get(url).then(function (response) {
-    console.log('retorno:', response.data);
-
     const dataJson = response.data;
    
 
@@ -78,13 +76,11 @@ $(function () {
     const imgUrlCaroulsel = dataJson.filter(data => data.media_type === 'CAROUSEL_ALBUM');
     
     const listImages = [ ...imgUrlCaroulsel,  ...imgUrl]
-
-
-    // Comparar os dados recebidos da API com os dados armazenados
-    const isDataUpdated = JSON.stringify(listImages) !== storedDataJsonArrayString;
+    
+    const isDataUpdated = JSON.stringify(listImages)
 
     // Atualizar os dados armazenados se houver alterações
-    if (isDataUpdated) {
+    if (isDataUpdated !== storedDataJsonArrayString) {
       const dataJsonString = JSON.stringify(listImages);
       localStorage.setItem('instagramData', dataJsonString);
     }
