@@ -59,9 +59,8 @@ $(function () {
   // .then(data => {
   // const {token} = data
 
-  console.log(token)
 
-  const url = `https://graph.instagram.com/me/media?access_token=IGQVJWTkMxMEw1YnF5a1FTalVpV1draFhnQ1l5bTdKclVjQkJtdWFUV3QtSzFIY1NoWFhaX21xcFBOOE9LaHZAXM2pxbnR3RUU0TF9pVEluTnZAjNDctVXRIaTRtMVhCVEo0aEdpWU54MzVpVDV5eC1raQZDZD&fields=media_url,media_type,caption,permalink&limit=15`;
+  const url = `https://graph.instagram.com/me/media?access_token=IGQVJWWkYxUllrMHFJRTRqbTZApQl9IbkZAmU3ZABMW5GM1R2R2Y3elkxdHhUbXZA1Njg1WWhtT1ltYTMxdzc5QzY3ZA3BENFllUmFJaDRxcU93X1BhZADlMQ045czNiclZA3T3JRTm5wRHkybXotTHBWMXBvWgZDZD&fields=media_url,media_type,caption,permalink&limit=15`;
   
   const imageLink = $('.instagram-image');
   const linkImageInsta = $('.instagram-link');
