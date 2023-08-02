@@ -45,21 +45,23 @@
 
 // feed.run();
 
-const apiUrl = 'https://back-end-site-dra-camila.vercel.app/token';
+// const apiUrl = 'https://back-end-site-dra-camila.vercel.app/token';
 
 $(function () {
   
-  fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Ocorreu um erro na requisição.');
-    }
-    return response.json();
-  })
-  .then(data => {
-  const {token} = data
+  // fetch(apiUrl)
+  // .then(response => {
+  //   if (!response.ok) {
+  //     throw new Error('Ocorreu um erro na requisição.');
+  //   }
+  //   return response.json();
+  // })
+  // .then(data => {
+  // const {token} = data
 
-  const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=media_url,media_type,caption,permalink&limit=15`;
+  console.log(token)
+
+  const url = `https://graph.instagram.com/me/media?access_token=IGQVJWTkMxMEw1YnF5a1FTalVpV1draFhnQ1l5bTdKclVjQkJtdWFUV3QtSzFIY1NoWFhaX21xcFBOOE9LaHZAXM2pxbnR3RUU0TF9pVEluTnZAjNDctVXRIaTRtMVhCVEo0aEdpWU54MzVpVDV5eC1raQZDZD&fields=media_url,media_type,caption,permalink&limit=15`;
   
   const imageLink = $('.instagram-image');
   const linkImageInsta = $('.instagram-link');
@@ -77,10 +79,10 @@ $(function () {
     
     const listImages = [ ...imgUrlCaroulsel,  ...imgUrl]
     
-    const isDataUpdated = JSON.stringify(listImages)
+    const isDataUpdated = JSON.stringify(listImages) !== storedDataJsonArrayString
 
     // Atualizar os dados armazenados se houver alterações
-    if (isDataUpdated !== storedDataJsonArrayString) {
+    if (isDataUpdated) {
       const dataJsonString = JSON.stringify(listImages);
       localStorage.setItem('instagramData', dataJsonString);
     }
@@ -102,6 +104,6 @@ $(function () {
   .catch(error => {
     console.error('Ocorreu um erro na requisição:', error.message);
   });
-});
+// });
 
 
