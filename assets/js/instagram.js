@@ -1,21 +1,21 @@
 
-// const apiUrl = 'https://back-end-site-dra-camila.vercel.app/token';
+const apiUrl = 'https://back-end-site-dra-camila.vercel.app/token';
 
 $(function () {
   
-  // fetch(apiUrl)
-  // .then(response => {
-  //   if (!response.ok) {
-  //     throw new Error('Ocorreu um erro na requisição.');
-  //   }
-  //   return response.json();
-  // })
-  // .then(data => {
-  // const {token} = data
+  fetch(apiUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Ocorreu um erro na requisição.');
+    }
+    return response.json();
+  })
+  .then(data => {
+  const {token} = data
 
-  // console.log(token)
+  console.log(token)
 
-  const url = `https://graph.instagram.com/me/media?access_token=IGQVJXNVRLTm5xVUlRdkM0eG53X3hqUEpBYTR1QXNhMWl4dW5yRzJaLVVKZAm9DT0c1cmZAPeTRCR2R0V0RXWjhOVmJrV0ppbmtxYm1yY1NoazBEQnRrYXdnMFhUZAElKUGpqdk9qaXBvdm5jeFpSaDlNeQZDZD&fields=media_url,media_type,caption,permalink&limit=15`;
+  const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=media_url,media_type,caption,permalink&limit=15`;
   
   const imageLink = $('.instagram-image');
   const linkImageInsta = $('.instagram-link');
@@ -58,6 +58,6 @@ $(function () {
   .catch(error => {
     console.error('Ocorreu um erro na requisição:', error.message);
   });
-// });
+});
 
 
