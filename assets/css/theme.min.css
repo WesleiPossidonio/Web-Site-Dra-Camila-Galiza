@@ -277,6 +277,15 @@ width: 6.5rem;
     display: none !important;
 }
 
+.ImgLogoCallAction {
+    width: 4.5rem;
+}
+
+.underline-3 .color {
+    color: #d3b88d !important;
+
+}
+
 
 @media only screen and (max-width: 1025px) {
     .ImgLogo {
@@ -431,4 +440,11 @@ width: 6.5rem;
     }
 
    
+}
+
+@media only screen and (width: 425px) { 
+
+    .image-dra {
+        margin-left: 1.5rem;
+    }
 }
