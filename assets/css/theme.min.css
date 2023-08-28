@@ -213,6 +213,7 @@ width: 6.5rem;
 }
 
 .position-dra {
+  
     bottom: 0;
     left: 10%;
     width: 28%;
@@ -281,9 +282,13 @@ width: 6.5rem;
     width: 4.5rem;
 }
 
-.underline-3 .color {
+.underline-3 .color, .color {
     color: #d3b88d !important;
 
+}
+
+.onlineImage {
+    width: 16rem;
 }
 
 
@@ -438,7 +443,10 @@ width: 6.5rem;
         margin-top: 5px !important; 
         margin-right: -8px !important;
     }
-
+    
+    .onlineImage {
+        width: 18rem;
+    }
    
 }
 
