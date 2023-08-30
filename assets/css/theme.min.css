@@ -47,6 +47,26 @@ body {
     color: #6c786c !important;
 }
 
+.btn-style-header {
+    margin-top: 0.9375rem;
+    border: 2px solid #d3b88d;
+    background-color: #d3b88d;
+
+    color: #2c3532;
+
+    border-radius: 6px;
+
+    margin-left: 1.2rem;
+}
+
+.btn-style-header:hover, .btn-style-header:active a {
+    color: #2c3532 !important;
+}
+
+.btn-style-header:active {
+    opacity: 0.8;
+}
+
 .color-2 {
     color: #6c786c !important;
 }
@@ -66,16 +86,18 @@ body {
     color: #d3b88d !important;
 }
 
-.nav-style-2, .text-acordion-2 {
+.nav-style-2,
+.text-acordion-2 {
     color: #fff !important;
 }
 
-.nav-style-2:hover, .text-acordion-2:hover {
+.nav-style-2:hover,
+.text-acordion-2:hover {
     color: #6c786c !important;
 }
 
 .developed-link:hover {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 .title-section {
@@ -160,6 +182,64 @@ body {
     max-width: 25rem !important;
 }
 
+.card-hover {
+    background-color: #fff !important;
+    transition: background-color 0.3s, color 0.3s !important;
+    transform: scale(1);
+}
+
+.card-hover:hover {
+    background-size: cover !important;
+    color: transparent !important;
+}
+
+.card-hover:hover .post-header h2,
+.card-hover:hover .post-content p {
+    visibility: hidden !important;
+    transform: scale(0.01);
+}
+
+.card-1:hover {
+    background-image: url('../img/ImgSite/ultrassom-geral.jpg') !important;
+}
+
+.card-2:hover {
+    background-image: url('../img/ImgSite/ultrassom-dermatologico.jpg') !important;
+}
+
+.card-3:hover {
+    background-image: url('../img/ImgSite/ultrassom-de-mama.jpg') !important;
+}
+
+.card-4:hover {
+    background-image: url('../img/ImgSite/ultrassom-transvaginal.jpg') !important;
+}
+
+.card-5:hover {
+    background-image: url('../img/ImgSite/ultrassom-de-tireoide.jpg') !important;
+}
+
+.card-6:hover {
+    background-image: url('../img/ImgSite/ultrassom-pelvico.jpg') !important;
+}
+
+.card-7:hover {
+    background-image: url('../img/ImgSite/ultrassom-purbedade-precosse.jpg') !important;
+}
+
+.card-8:hover {
+    background-image: url('../img/ImgSite/ultrassom-abdome-total.jpg') !important;
+}
+
+.card-9:hover {
+    background-image: url('../img/ImgSite/ultrassom-parede-abdominal.jpg') !important;
+}
+
+.card-10:hover {
+    background-image: url('../img/ImgSite/ultrassom-mapeamento-facial.jpg') !important;
+}
+
+
 
 .btn-online-2:hover {
     background: #d3b88d !important;
@@ -209,16 +289,17 @@ body {
 }
 
 .post-header img {
-width: 6.5rem;
+    width: 6.5rem;
 }
 
 .position-dra {
-  
+
     bottom: 0;
     left: 10%;
     width: 28%;
     z-index: 2
 }
+
 
 .image-dra {
     width: 22rem !important;
@@ -267,7 +348,7 @@ width: 6.5rem;
 }
 
 .footer-text-style:hover {
-   color: #6c786b !important;
+    color: #6c786b !important;
 }
 
 .blog-home {
@@ -282,7 +363,8 @@ width: 6.5rem;
     width: 4.5rem;
 }
 
-.underline-3 .color, .color {
+.underline-3 .color,
+.color {
     color: #d3b88d !important;
 
 }
@@ -318,6 +400,12 @@ width: 6.5rem;
 @media only screen and (max-width: 780px) {
     html {
         font-size: 87.5% !important;
+    }
+
+    .btn-style-header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
     .title-section {
@@ -440,17 +528,17 @@ width: 6.5rem;
     }
 
     .text-contact-services {
-        margin-top: 5px !important; 
+        margin-top: 5px !important;
         margin-right: -8px !important;
     }
-    
+
     .onlineImage {
         width: 18rem;
     }
-   
+
 }
 
-@media only screen and (width: 425px) { 
+@media only screen and (width: 425px) {
 
     .image-dra {
         margin-left: 1.5rem;
