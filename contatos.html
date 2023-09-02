@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./assets/css/plugins.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -151,8 +152,7 @@
                     <div class="col-xl-10 mx-auto">
                         <div class="row gy-10 gx-lg-8 gx-xl-12">
                             <div class="col-lg-8 order-2 order-md-1">
-                                <form class="contact-form needs-validation" method="post"
-                                    action="./assets/php/contact.php" novalidate>
+                                <form class="contact-form needs-validation" novalidate>
                                     <div class="messages"></div>
                                     <div class="row gx-4">
                                         <div class="col-md-6">
@@ -165,9 +165,19 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                         <div class="col-md-6">
+                                            <div class="form-floating mb-4">
+                                                <input id="form_name" type="text" name="phone" class="form-control"
+                                                    placeholder="Jane" required>
+                                                <label for="form_name">Telefone</label>
+                                                <div class="invalid-feedback">
+                                                    Por gentileza, digite o seu nome.
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12">
                                             <div class="form-floating mb-4">
                                                 <input id="form_email" type="email" name="email" class="form-control"
                                                     placeholder="jane.doe@example.com" required>
@@ -180,13 +190,17 @@
 
                                         <div class="col-md-12">
                                             <div class="form-select-wrapper mb-4">
-                                                <select class="form-select" id="form-select" name="department" required>
+                                                <select class="form-select" id="form-select" name="servico" required>
                                                     <option selected disabled value="">Selecione o serviço</option>
-                                                    <option value="Servico 1">Servico 1</option>
-                                                    <option value="Servico 2">Servico 2</option>
-                                                    <option value="Servico 3">Servico 3</option>
-                                                    <option value="Servico 4">Servico 4</option>
-                                                    <option value="Servico 5">Servico 5</option>
+                                                    <option value="Ultrassom Transvaginal">Ultrassom Transvaginal</option>
+                                                    <option value="Ultrassom de Tireoide">Ultrassom de Tireoide</option>
+                                                    <option value="Ultrassom Purbedade Precosse">Ultrassom Purbedade Precosse</option>
+                                                    <option value="Ultrassom Abdome">Ultrassom Abdome</option>
+                                                    <option value="Ultrassom de Mamas">Ultrassom de Mamas</option>
+                                                    <option value="Ultrassom de Abdome Total">Ultrassom de Abdome Total</option>
+                                                    <option value="Ultrassom Geral">Ultrassom Geral</option>
+                                                    <option value="Ultrassom Dermatológico">Ultrassom Dermatológico</option>
+                                                    <option value="Ultrassom de Mapeamento Facial">Ultrassom Pelvico</option>
                                                 </select>
                                                 <div class="invalid-feedback">
                                                     Por gentileza, selecione um serviço.
@@ -208,7 +222,7 @@
 
                                         <div class="col-12">
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input" type="checkbox" value=""
+                                                <input class="form-check-input" name="lgpt" type="checkbox" value=""
                                                     id="invalidCheck" required>
                                                 <label class="form-check-label text-white" for="invalidCheck">
                                                     Eu Concordo <a href="#" class="hover color">Politica de
@@ -266,7 +280,6 @@
                             </div>
 
                         </div>
-
                     </div>
 
                 </div>
@@ -331,6 +344,7 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/theme.js"></script>
     <script type="text/javascript" src="./assets/js/instagram.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
 

@@ -63,7 +63,7 @@ body {
     opacity: 0.8;
 }
 
-.color-2 {
+.color-2{
     color: #6c786c !important;
 }
 
@@ -78,7 +78,7 @@ body {
 .spanStyle,
 .developed-link,
 .nav-style,
-.color-1 {
+.color-1  {
     color: #d3b88d !important;
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .nav-style-2:hover,
-.text-acordion-2:hover {
+.text-acordion-2:hover, .accordion-wrapper .card-header button {
     color: #6c786c !important;
 }
 
@@ -417,6 +417,14 @@ body {
 
 
 @media only screen and (max-width: 1025px) {
+    html {
+        font-size: 87.5% !important;
+    }
+
+    .swiper-hero, .swiper-hero .swiper-slide {
+        height: 750px !important;
+    }
+
     .ImgLogo {
         width: 12rem;
     }
@@ -440,9 +448,7 @@ body {
 }
 
 @media only screen and (max-width: 780px) {
-    html {
-        font-size: 87.5% !important;
-    }
+   
 
     .btn-style-header {
         display: flex !important;
@@ -542,7 +548,7 @@ body {
     }
 
     .icon {
-        width: 2rem !important;
+        width: 3rem !important;
     }
 
 

@@ -746,56 +746,78 @@ var theme = {
    * Bootstrap validation - Only sends messages if form has class ".contact-form" and is validated and shows success/fail messages
    */
   forms: () => {
-    (function() {
+    (function () {
       "use strict";
-      window.addEventListener("load", function() {
+      window.addEventListener("load", function () {
         var forms = document.querySelectorAll(".needs-validation");
-        var inputRecaptcha = document.querySelector("input[data-recaptcha]"); 
+        var inputRecaptcha = document.querySelector("input[data-recaptcha]");
+  
         window.verifyRecaptchaCallback = function (response) {
-          inputRecaptcha.value = response; 
+          inputRecaptcha.value = response;
           inputRecaptcha.dispatchEvent(new Event("change"));
-        }
+        };
+  
         window.expiredRecaptchaCallback = function () {
-          var inputRecaptcha = document.querySelector("input[data-recaptcha]"); 
-          inputRecaptcha.value = ""; 
+          inputRecaptcha.value = "";
           inputRecaptcha.dispatchEvent(new Event("change"));
-        }
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener("submit", function(event) {
-            if(form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
+        };
+  
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+  
+            if (form.checkValidity() === false) {
+              form.classList.add("was-validated");
+              return;
             }
+  
             form.classList.add("was-validated");
-            if(form.checkValidity() === true) {
-              event.preventDefault();
-              form.classList.remove("was-validated");
-              // Send message only if the form has class .contact-form
-              var isContactForm = form.classList.contains('contact-form');
-              if(isContactForm) {
-                var data = new FormData(form);
-                var alertClass = 'alert-danger';
-                fetch("assets/php/contact.php", {
-                  method: "post",
-                  body: data
-                }).then((data) => {
-                  if(data.ok) {
-                    alertClass = 'alert-success';
+            form.classList.remove("was-validated");
+  
+            var isContactForm = form.classList.contains("contact-form");
+            if (isContactForm) {
+              var listData = new FormData(form);
+              var data = {
+                name: listData.get("name"),
+                email: listData.get("email"),
+                phone: listData.get("phone"),
+                service: listData.get("servico") || "",
+                message: listData.get("message"),
+                lgpt: listData.get("lgpt"),
+              };
+  
+              fetch("https://back-end-web-site-dra-camila-galiza.vercel.app/sendMail", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              })
+                .then(function (response) {
+                  if (response.ok) {
+                    return response.text();
+                  } else {
+                    throw new Error("Erro ao enviar o email.");
                   }
-                  return data.text();
-                }).then((txt) => {
-                  var alertBox = '<div class="alert ' + alertClass + ' alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' + txt + '</div>';
-                  if(alertClass && txt) {
-                    form.querySelector(".messages").insertAdjacentHTML('beforeend', alertBox);
-                    form.reset();
-                    grecaptcha.reset();
-                  }
-                }).catch((err) => {
-                  console.log(err);
+                })
+                .then(function (text) {
+                  Toastify({
+                    text: "Email enviado com sucesso!",
+                    className: "info",
+                    style: {
+                      background: "#fff",
+                      color: "#000",
+                    },
+                  }).showToast();
+  
+                  form.reset();
+                })
+                .catch(function (error) {
+                  console.log(error);
                 });
-              }
             }
-          }, false);
+          });
         });
       }, false);
     })();
