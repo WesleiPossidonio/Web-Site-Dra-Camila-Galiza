@@ -185,6 +185,10 @@ body {
     color: transparent !important;
 }
 
+.card-hover:hover a {
+    color: #FFF !important;
+}
+
 .card-hover:hover::before {
     content: "";
     position: absolute;
@@ -269,6 +273,19 @@ body {
     background: #2c3532;
 }
 
+.subTitleAbout {
+    margin-top: -0.4rem;
+}
+
+.subTitleExames {
+    margin-top: -0.6rem !important;
+    font-weight: bold;
+}
+
+.img-about {
+    margin-top: 4.5rem !important;
+}
+
 .blog-title {
     margin-top: 1.5rem;
 }
@@ -316,6 +333,11 @@ body {
 .img-logoCamilaE {
     width: 18rem;
     margin-bottom: -3.5rem !important;
+}
+
+.imgBoxCamila {
+    bottom: 0;
+    right: 5rem;
 }
 
 .image-rotator {
@@ -518,6 +540,24 @@ body {
 
 }
 
+@media only screen and (max-width: 767px) { 
+    .box-image {
+        flex-wrap: nowrap;
+        margin-bottom: 11rem !important;
+    }
+
+    .itemOne figure img {
+        position: absolute;
+        left: 4rem;
+        
+    }
+    
+    .ItemTwo figure img {
+        position: absolute;
+        right: 4rem;
+    }
+}
+
 @media only screen and (max-width: 560px) {
 
     .swiper-hero,
@@ -590,5 +630,20 @@ body {
 
     .image-dra {
         margin-left: 1.5rem;
+    }
+
+    .box-image {
+        margin-bottom: 0 !important;
+    }
+
+    .itemOne figure img {
+        position: absolute;
+        left: 2rem;
+        
+    }
+    
+    .ItemTwo figure img {
+        position: absolute;
+        right: 2rem;
     }
 }
