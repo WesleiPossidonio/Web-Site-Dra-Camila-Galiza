@@ -54,20 +54,64 @@
                         <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link nav-style fs-16" href="./index.html">Home</a>
+                                    <a class="nav-link nav-style fs-18" href="./index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-style fs-16" href="#about-me">Sobre Mim</a>
+                                    <a class="nav-link nav-style fs-18" href="#about-me">Sobre Mim</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-style fs-16" href="#services">Serviços</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-style fs-18">Serviços</a>
+                                    <ul class="dropdown-menu bg-page">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-geral.html">Ultrassom Geral</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-dermatologico.html">Ultrassom Dermatológico</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-de-mamas.html">Ultrassom de Mamas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-transvaginal.html">Ultrassom Transvaginal</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-tireoide.html">Ultrassom Tireoide</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-pelvico.html">Ultrassom Pélvico</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-purbedade-precose.html">Ultrassom para <br> rastreio
+                                                de Purberdade Precoce</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-abdome-total.html">Ultrassom de abdômen Total</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./ultrassom-parede-abdominal.html">Ultrassom Parede Abdominal</a>
+                                        </li>
+                                        <!-- <li class="nav-item">
+                                            <a class="dropdown-item nav-style fs-18"
+                                                href="./dermatologico-mapeamento-facial.html">Dermatológico entra
+                                                mapeamento facial</a>
+                                        </li> -->
+                                    </ul>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link nav-style fs-16" href="/contatos.html">Contatos</a>
+                                    <a class="nav-link nav-style fs-18" href="/contatos.html">Contatos</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link py-1 ms-0 ms-md-7 fs-16 btn-style-header"
+                                    <a class="nav-link py-1 ms-0 ms-md-7 fs-18 btn-style-header"
                                         href="https://ultrasis.life/exame/" target="_blank">Laudo
                                         Online</a>
                                 </li>
@@ -83,20 +127,28 @@
                             </div>
                         </div>
                     </div>
-
-                    <div>
+                    
+                    <!-- <div>
                         <ul>
 
                             <li class="nav-item d-lg-none">
                                 <button class="hamburger offcanvas-nav-btn"><span></span></button>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
 
             </nav>
-        </header>
 
+            <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
+                <div class="container d-flex flex-row py-6">
+                  <form class="search-form w-100">
+                    <input id="search-form" type="text" class="form-control" placeholder="Type keyword and hit enter">
+                  </form>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+        </header>
        
 
         <section class="wrapper">
@@ -118,7 +170,7 @@
                                             Avanços em Ultrassonografia Diagnóstica
                                         </p>
                                         <div class="animate__animated animate__slideInUp animate__delay-3s">
-                                            <a href="https://wa.me/+5522999300802" target="_blank" class="btn btn-lg btn-outline-white rounded-pill">Saiba Mais!</a>
+                                            <a href="#services" class="btn btn-lg btn-outline-white rounded-pill">Saiba Mais!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -189,9 +241,11 @@
 
                     <div class="col-12 col-lg-10 px-8">
                         <div data-cues="slideInDown" data-group="page-title" data-delay="1000">
-                            <h3 class="fs-18 text-uppercase text-light mb-0 subTitle"> #Exames</h3>
-                            <p class="fs-30 text-light mb-0">Veja Nossos</p>
-                            <p class="fs-30 text-light subTitleExames"> Exames em Destaque</p>
+                            <h3 class="fs-18 text-uppercase text-light mb-0 subTitle"> #Destaque</h3>
+                            <h2 class="display-3 text-light">
+                                Nossos Exames <br> de Ultrassonografia
+                                <br> em Destaque
+                            </h2>
                         </div>
 
                         <div class="position-relative mb-14 mb-md-17">
@@ -206,21 +260,24 @@
                                                     <div class="card card-hover card-1">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3"> Ultrassom Geral
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark" href="./ultrassom-geral.html">
+                                                                        Ultrassom Geral
+                                                                    </a>
                                                                 </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     Você já ouviu falar daquela tecnologia que permite
                                                                     "ver" dentro do corpo sem precisar de cortes ou
                                                                     raios-X? Isso é o ultrassom, também chamado de
                                                                     ultrassonografia.
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="/ultrassom-geral.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -234,20 +291,24 @@
                                                     <div class="card card-hover card-2">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3"> Ultrassom
-                                                                    Dermatológico </h2>
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./ultrassom-dermatologico.html">
+                                                                        Ultrassom Dermatológico
+                                                                    </a>
+                                                                </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     O Ultrassom Dermatológico é uma tecnologia inovadora
                                                                     usada no campo da dermatologia para tratar várias
                                                                     condições da pele, melhorar a textura,
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="./ultrassom-dermatologico.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -261,20 +322,24 @@
                                                     <div class="card card-hover card-3">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3">Ultrassom de Mamas
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./ultrassom-de-mamas.html">
+                                                                        Ultrassom de Mamas
+                                                                    </a>
                                                                 </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     O Ultrassom de Mama é um exame de imagem que utiliza
                                                                     ondas sonoras de alta frequência para criar imagens
                                                                     detalhadas das estruturas internas das mamas.
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="./ultrassom-de-mamas.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -288,21 +353,25 @@
                                                     <div class="card card-hover card-4">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3"> Ultrassom
-                                                                    transvaginal</h2>
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./ultrassom-transvaginal.html">
+                                                                        Ultrassom transvaginal
+                                                                    </a>
+                                                                </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     O Ultrassom Transvaginal é um exame de imagem
                                                                     realizado com o uso de uma sonda de ultrassom que é
                                                                     inserida na vagina para visualizar os órgãos
                                                                     internos da pelve feminina.
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="./ultrassom-transvaginal.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -316,21 +385,25 @@
                                                     <div class="card card-hover card-5">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3"> Ultrassom de
-                                                                    Tireoide</h2>
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./ultrassom-tireoide.html">
+                                                                        Ultrassom de Tireoide
+                                                                    </a>
+                                                                </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     O ultrassom de tireoide é um exame de imagem não
                                                                     invasivo que utiliza ondas sonoras de alta
                                                                     frequência para criar imagens detalhadas da glândula
                                                                     tireoide
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="./ultrassom-tireoide.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -344,20 +417,24 @@
                                                     <div class="card card-hover card-6">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3">Ultrassom Pélvico
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./ultrassom-pelvico.html">
+                                                                        Ultrassom Pélvico
+                                                                    </a>
                                                                 </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     O Ultrassom Pélvico é um exame de imagem que utiliza
                                                                     ondas sonoras de alta frequência para criar imagens
                                                                     detalhadas das estruturas internas da região pélvica
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="./ultrassom-pelvico.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -372,20 +449,24 @@
                                                     <div class="card card-hover card-7">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3">Ultrassom para
-                                                                    rastreio de Purberdade Precoce</h2>
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./ultrassom-purbedade-precose.html">
+                                                                        Ultrassom para rastreio de Purberdade Precoce
+                                                                    </a>
+                                                                </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     A puberdade precoce é quando os sinais de
                                                                     desenvolvimento sexual aparecem antes da idade
                                                                     considerada normal.
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="./ultrassom-purbedade-precose.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -400,12 +481,16 @@
                                                     <div class="card card-hover card-8">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3">Ultrassom de abdômen
-                                                                    Total</h2>
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./ultrassom-abdome-total.html">
+                                                                        Ultrassom de abdômen Total
+                                                                    </a>
+                                                                </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     O Ultrassom Abdominal total é um exame de imagem não
                                                                     invasivo e indolor
                                                                     que utiliza ondas sonoras de alta frequência para
@@ -413,9 +498,9 @@
                                                                     internas do abdome.
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="./ultrassom-abdome-total.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -430,21 +515,25 @@
                                                     <div class="card card-hover card-9">
                                                         <div class="card-body">
                                                             <div class="post-header">
-                                                                <h2 class="post-title h3 mt-1 mb-3">Ultrassom Parede
-                                                                    Abdominal</h2>
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./ultrassom-parede-abdominal.html">
+                                                                        Ultrassom Parede Abdominal
+                                                                    </a>
+                                                                </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     Ultrassom da Parede Abdominal, é um exame de imagem
                                                                     que visa avaliar as estruturas da parede abdominal
                                                                     incluindo os músculos, tecidos subcutâneos e
                                                                     possíveis anormalidades
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma
-                                                                    consulta!</a>
+                                                                <a href="./ultrassom-parede-abdominal.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -457,18 +546,25 @@
                                                 <article>
                                                     <div class="card card-hover card-10">
                                                         <div class="card-body">
-                                                            <div class="post-header">Dermatológico entra mapeamento facial</h2>
+                                                            <div class="post-header">
+                                                                <h2 class="post-title h3 mt-1 mb-3">
+                                                                    <a class="link-dark"
+                                                                        href="./dermatologico-mapeamento-facial.html">
+                                                                        Dermatológico entra mapeamento facial
+                                                                    </a>
+                                                                </h2>
                                                             </div>
 
                                                             <div class="post-content">
-                                                                <p class="fs-14">
+                                                                <p>
                                                                     Os serviços de ultrassonografia oferecem uma
                                                                     abordagem segura, não invasiva e altamente precisa
                                                                     para auxiliar médicos
                                                                 </p>
 
-                                                                <a href="https://wa.me/+5522999300802" target="_blank"
-                                                                    class="more hover color-2 fs-14">Agende uma consulta!</a>
+                                                                <a href="/dermatologico-mapeamento-facial.html"
+                                                                    class="more hover color-2">Veja
+                                                                    Mais!</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -700,40 +796,7 @@
             </div>
         </section>
 
-        <!-- <section class=" pb-17">
-            <div class="container">
-
-                <div class="row text-center flex-column py-15">
-                    <div class="col=12 d-flex align-items-center justify-content-center">
-                        <img class="img-logo-instagram" src="./assets/img/ImgSite/Nosso Instagram-1.svg"
-                            style="margin-top: -3rem;" alt="">
-                    </div>
-
-                    <div class="col-12">
-                        <div class="elfsight-app-4d89f97f-0f76-4a84-b6cd-27d609f12145"></div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section> -->
-
-
-        <section>
-            <div class="container">
-                <div class="row py-17">
-                    <div class="col-12 d-flex align-items-center justify-content-center">
-                        <img class="img-logo-instagram" src="./assets/img/ImgSite/Nosso Instagram-1.svg"
-                            style="margin-top: -3rem;" alt="">
-                    </div>
-                    <div class="col-12">
-                        <div class="elfsight-app-4d89f97f-0f76-4a84-b6cd-27d609f12145" data-elfsight-app-lazy></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="wrapper bg-page">
+        <section class="wrapper bg-one">
             <div class="container py-15">
 
                 <div class="row text-center pb-5">
@@ -1025,7 +1088,7 @@
 
         </section>
 
-        <section class="wrapper my-15">
+        <section class="wrapper py-15 bg-page">
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
@@ -1033,7 +1096,7 @@
                     </div>
                 </div>
 
-                <div class="card bg-page card-mobile mt-10 mt-md-22" data-cue="fadeIn" data-duration="1000">
+                <div class="card bg-one card-mobile mt-10 mt-md-22" data-cue="fadeIn" data-duration="1000">
                     <div class="card-body position-relative pt-10 pb-0 py-lg-6 px-lg-8">
                         
                         <div class="row text-center order-1 align-items-center">

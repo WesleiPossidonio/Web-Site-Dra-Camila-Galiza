@@ -82,6 +82,10 @@ body {
     color: #d3b88d !important;
 }
 
+.developed-link:hover {
+color: #FFF !important;
+}
+
 .nav-style-2,
 .text-acordion-2, .developed-link:hover  {
     color: #fff !important;
@@ -291,7 +295,7 @@ body {
 }
 
 .ImgLogo {
-    width: 18rem;
+    width: 14rem;
 
 }
 
