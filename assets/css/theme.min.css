@@ -246,10 +246,9 @@ color: #FFF !important;
     background-image: url('../img/ImgSite/ultrassom-parede-abdominal.jpg') !important;
 }
 
-.card-10:hover {
-    background-image: url('../img/ImgSite/ultrassom-mapeamento-facial.jpg') !important;
+.fw-bold {
+    font-weight: 700 !important;
 }
-
 
 
 .btn-online-2:hover {
