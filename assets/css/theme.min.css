@@ -41,6 +41,10 @@ body {
     color: #fff !important;
 }
 
+.imgFooter {
+    width: 10rem !important;
+}
+
 .btn-style-header {
     margin-top: 0.9375rem;
     border: 2px solid #d3b88d;
