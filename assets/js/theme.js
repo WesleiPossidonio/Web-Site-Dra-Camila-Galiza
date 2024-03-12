@@ -787,7 +787,7 @@ var theme = {
                 lgpt: listData.get("lgpt"),
               };
   
-              fetch("http://localhost:4000/sendMail", {
+              fetch("https://back-end-site-dra-camila.vercel.app/sendMail", {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {
