@@ -784,7 +784,6 @@ var theme = {
                 phone: listData.get("phone"),
                 service: listData.get("servico") || "",
                 message: listData.get("message"),
-                lgpt: listData.get("lgpt"),
               };
   
               fetch("https://back-end-site-dra-camila.vercel.app/sendMail", {
